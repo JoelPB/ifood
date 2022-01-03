@@ -1,22 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, Image, View, ButtonContainer } from './style';
+import { Text } from 'react-native';
+
+import banner from '../../assets/img/banner.png';
+import Button  from '../../components/Button';
 
 export default function Home() {
   return (
-    <View style={styles.container}>
-      <Text>Olá mundo</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <StatusBar style='theme-dark' />
+      <SafeAreaView>
+        <View>
+          <Text>Pedir comida nunca foi tão fácil</Text>
+          <Image source={banner}/>
+          <Text>Permitir localização</Text>
+          <Text>Para descobrir restaurantes que entragam em sua região</Text>
+        </View>
+        <ButtonContainer>
+          <Button text="PULAR" onPress={() => {}}/>
+          <Button text="ENTRAR" theme="primary"/>
+        </ButtonContainer>
+      </SafeAreaView>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
-
-
