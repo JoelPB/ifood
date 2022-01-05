@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState, useEffect} from 'react';
-import {Text, Alert, ActivityIndicator} from 'react-native';
-import { SafeAreaView, Image, View, ButtonContainer } from './style';
+import {Text, View, SafeAreaView, Alert, ActivityIndicator} from 'react-native';
+import {  } from './style';
 
 // import banner from '../../assets/img/banner.png';
 // import Button  from '../../components/Button';
@@ -36,11 +36,24 @@ export default function Principal() {
     buscaDados();
   }, [])
 
+  const ViewHome = (props) => { 
+    return (
+      <Text>Principal</Text>
+    )
+  }
+
   return (
     <>
       <StatusBar style='theme-dark' />
       <SafeAreaView>
-        <Text>Principal</Text>
+        {loaded ? (
+          <ViewHome />
+        ):
+        (
+          <View>
+            <ActivityIndicator color='F0001A' size='large'/>
+          </View>
+        )}
       </SafeAreaView>
     </>
   );
