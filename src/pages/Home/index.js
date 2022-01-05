@@ -1,4 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { SafeAreaView, Image, View, ButtonContainer } from './style';
 import { Text } from 'react-native';
 
