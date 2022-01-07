@@ -4,7 +4,7 @@ import { Dimensions } from 'react-native'
 
 export const SafeAreaView = styled.SafeAreaView`
 
-        flex:1;
+        flex: 1;
         align-items: center;
         padding-top: 40px;
 
@@ -19,15 +19,15 @@ export const Image = styled.Image`
 `
 export const ViewActivity = styled.View`
 
-        flex:1;
+        flex: 1;
         align-items: center;
-        justify-content:center;
+        justify-content: center;
         padding-top: 40px;
 `
 
 export const View = styled.View`
 
-        flex:2;
+        flex: 2;
         align-items: center;
         padding-top: 40px;
 `
@@ -41,10 +41,10 @@ export const ViewPrincipal = styled.ScrollView`
 `
 
 export const ButtonContainer = styled.View`
-        flex-direction:row;
+        flex-direction: row;
         justify-content: space-between;
-        align-items:center;
-        width:100%;
+        align-items: center;
+        width: 100%;
         padding: 0 20px 20px 20px;
 `
 
@@ -56,8 +56,8 @@ export const CategoriaView = styled.ScrollView`
 
 export const SelectTipo = styled.View`
 
-        flex-direction:row;
-        text-align:left;
+        flex-direction: row;
+        text-align: left;
         margin: 0 20px 10px 20px;
         font-weight: bold;
         width: ${(Dimensions.get('window').width)}px;
